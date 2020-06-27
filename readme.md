@@ -22,7 +22,27 @@ ACME Corporation is looking for devs with an understanding of Rails. The followi
 
 Provide an overview and description of a standard source control process for a large project
 
+
+*CMP1043-2.1 Provide an overview and description of your source control process.*
+*Provides an extensive overview and description of a standard source control process*
+
 **Answer:**
+*From Workbook 2*
+Source control workflow refers to the recommended steps and procedure adhered to in a source control environment. Developers utilising a source control system can contribute and work in different ways. The workflow concept is a design that defines the rules versioning, branching and the control of the master branch.
+[Reference](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+A popular standard workflow practiced by developers is the centralized workflow.
+In a centralized workflow, developers all contribute to a shared repository (as opposed to fork-pull workflow. This central repository is often created and hosted on source control hosting services such as Bitbucket or GitHub.
+
+Problems arise when publishing or "pushing" to the central repository without following a source control workflow. The centralized workflow, sometimes referred to as feature branch workflow, ensures that all code changes are made in new, feature-specific branches instead of master. These feature branches are created on the repository for code changes. Developers will make changes and edit files committing locally and synchronising upstream at a convenient time. Reviewed changes can then be "pulled" back into the shared repositories master branch by initiating a pull request. The request can then either be accepted or denied. Accepted pull requests then see new code "merged" into the master branch. 
+
+This segmentation of new code and it's staged change control methodology ensures that the master branch remains valid, stable and conflict-free. This approach is often employed by organisations for in-house development.
+[Reference](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
+
+Notes:
+
+Working on the Rails hackathon in a group. Used source control, collaboration tools such as liveshare, communication apps such as WhatsApp. Used Trello.
+Worked on different branches. Assigned someone as the master for managing pulls.
 
 ## Q2
 

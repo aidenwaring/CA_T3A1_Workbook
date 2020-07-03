@@ -110,6 +110,78 @@ Explain how JSON can be manipulated in JavaScript, using examples from the JavaS
 
 **Answer:**
 
+JSON stands for JavaScript Object Notation and is a format for the storing and sharing of data. JSON bears a syntactical resemblance to the JavaScript - the JSON data exists as a string format. Written in key:value pairs, JSON uses the same data types as those found within JavaScript objects.
+
+Below is an example of a formatted JSON string:
+
+```json
+{
+  "Trainer Name": "Red",
+  "homeTown": "Pallet Town",
+  "born": 1996,
+  "partyPokemon": [
+    {
+      "name": "Pikachu",
+      "level": 81,
+      "type": "Electric",
+      "moves": ["Charm", "Quick Attack", "Thunderbolt", "Thunder"]
+    },
+    {
+      "name": "Blastoise",
+      "level": 84,
+      "type": "Water",
+      "moves": ["Rain Dance", "Blizzard", "Surf", "Whirlpool"]
+    },
+    {
+      "name": "Snorlax",
+      "level": 75,
+      "type": "Normal",
+      "moves": ["Amnesia", "Snore", "Rest", "Body Slam"]
+    }
+  ]
+}
+```
+
+**JSON Manipulation:**
+
+Using the JavaScript function ``JSON.parse(params)`` contents can be parsed from string data type into a JavaScript object, where params represents the JSON data.
+
+To access this information within JavaScript (.js), we parse it with **JSON.parse()** to convert the string to JavaScript object syntax.
+
+```javascript
+const data = '{"trainerName": "Red","homeTown": "Pallet Town","born": 1996,"partyPokemon": [{"name": "Pikachu","level": 81,"type": "Electric","moves": ["Charm", "Quick Attack", "Thunderbolt", "Thunder"]},{"name": "Blastoise","level": 84,"type": "Water","moves": ["Rain Dance", "Blizzard", "Surf", "Whirlpool"]},{"name": "Snorlax","level": 75,"type": "Normal","moves": ["Amnesia", "Snore", "Rest", "Body Slam"]}]}'
+
+const pokedata = JSON.parse(data)
+
+console.log(pokedata.trainerName) // "Red"
+console.log(pokedata["trainerName"]) // "Red"
+console.log(pokedata.partyPokemon[0].name) // Pikachu
+
+```
+
+To convert a JavaScript object to JSON, we use the method **JSON.stringify()** instead. 
+
+```javascript
+let object = {
+  trainerName: "Blue",
+  born: 1996,
+  partyPokemon: [
+    {
+      name: "Arcanine",
+      level: 63,
+      type: "Fire",
+      moves: ["Roar", "Leer", "Ember", "Take Down"]
+    }
+  ]
+}
+
+let bluepokedata = JSON.stringify(object) // {"trainerName":"Blue","born":1996,"partyPokemon":[{"name":"Arcanine","level":63,"type":"Fire","moves":["Roar","Leer","Ember","Take Down"]}]}
+```
+
+
+
+
+
 ## Q13
 
 For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes

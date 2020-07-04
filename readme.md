@@ -86,6 +86,43 @@ Explain type coercion, using examples from the JavaScript programming language
 
 **Answer:**
 
+Type coercion is the automatic or conversion of values from one data type to another.
+
+In JavaScript, data can be either implicitly coerced or explicitly coerced using different syntax.
+
+Type conversions can be implicitly or explicitly made. In JavaScript is automatically performed. The MDN refers implicit conversion of values from one type to another type.
+
+*Example:*
+```javascript
+let var1 = 5
+let var2 = "5"
+
+let sum = var1 + var2
+
+console.log(sum) // 55
+```
+
+This above code treats a variable of one data type as if it belongs to a different data type. The example demonstrates coercion of the value of `5` from var1 into a string. These two strings are then concatenated together to result in the string of `55` being logged. 
+In this case we will require explicit coercion and is performed by certain syntactic instructions. In JavaScript, we will need to be explicitly tell it to convert the number `5` to a number using the `Number()` method.
+
+```javascript
+sum = Number(var2) + var1
+```
+
+Another example where JavaScript performs type coercion is with the equals `=` opertion.
+The `==` operator performs an 'equal to' operation on a set of values to determine if the result is true or false. With this syntax. When `==` is used, the code will check for equality once any type conversions found within the operation are performed. The `===` operator however will not perform any coercion and will strictly compare the values as their current data type.
+
+*Example:*
+```javascript
+5 == "5" // True
+
+5 === "5" // False
+```
+
+References Used:
+[1](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
+
+
 ## Q9
 
 Explain data types, using examples from the JavaScript programming language
@@ -115,21 +152,21 @@ In JavaScript (ECMAScript standards), nine data and structure types are defined:
         ```
 - null
     * Represents a nonexistent data that when assigned a null data type no longer exists.
-    *Example*
+    *Example:*
       ```javascript
       let hobbies = ["reading", "writing", "long walks at the beach"]
       person = null // Person is now null. Type becomes an object
       ```
 - Number
     * Represents numbers between -(253 − 1) and 253 − 1) (BigInt to express numbers outside this range. Can express integers with decimal point.
-    *Example*
+    *Example:*
       ```javascript
       let num1 = 64
       let num2 = 64.00
       ```
 - Object
     * Denoted using `{}`, objects contain data of key:value pairs.
-    *Example*
+    *Example:*
         ```javascript
         let person = {
           hair: "blond"
@@ -138,7 +175,7 @@ In JavaScript (ECMAScript standards), nine data and structure types are defined:
         ```
 - Function
     * Functions are objects with the added ability to be callable.
-    *Example*
+    *Example:*
       ```javascript
       function myFunction() { //ES5
         return "Hello!"
@@ -150,19 +187,17 @@ In JavaScript (ECMAScript standards), nine data and structure types are defined:
       ```
 - String
   * Represents text data. Written in quotes, contains series of characters.
-      *Example*
+      *Example:*
       ```javascript
       let aboutme = "I am Aiden Waring! - 24." // Valid string entry using alphanumeric characters
       ```
 
 - undefined
     * The value given to a declared variable with no defined data.
-    *Example*
+    *Example:*
       ```javascript
       const data // Value is not defined
       ```
-
-Examples
 
 References Used:
 [1](https://developer.mozilla.org/en-US/docs/Glossary/Type), [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)

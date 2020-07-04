@@ -200,9 +200,80 @@ Explain how arrays can be manipulated in JavaScript, using examples from the Jav
 
 **Answer:**
 
-In JavaScript, an array is a collection or store of a number of elements. These collections of data are stored in an array data type and may contain elements of various different data types. These list-like objects have no fixed length, nor are the types of each element in it. Properties such as the array's length and the location of the elements within the array can be manipulated. Items within the array can be set and updated by using (square) bracket `[]` notation and providing the integer index value of the associated value.
+In JavaScript, an array is a collection or store of a number of elements. These collections of data are stored in an array data type and may contain elements of various different data types. These list-like objects have no fixed length, nor are the types of each element in it. Properties such as the array's length and the location of the elements within the array can be manipulated. Items within the array can be set and updated by using (square) bracket `[]` notation and providing the integer index value of the associated value. The below code demonstrates creating a new array.
+
+*Example:*
+
+```javascript
+
+// Creates new array with string contents
+let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
+console.log(beaches.length) // 4
+console.log(beaches) // [ 'Burleigh', 'Miami', 'Kirra', 'Rainbow' ]
+```
 
 
+JavaScript includes a large number of inbuilt array methods that can be used to manipulate arrays and its contents. Outlined are a number of examples for commonly used array manipulation methods:
+
+*Example:*
+
+```javascript
+
+//array.join() - Returns new string concatenating all elements with a separator string
+let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
+
+console.log(beaches.join('')) // BurleighMiamiKirraRainbow
+console.log(beaches.join('-')) // Burleigh-Miami-Kirra-Rainbow
+```
+
+```javascript
+//array.map() - Creates a new array with the results of a callback function performed on each element within the array
+let favouriteNumbers = ["4", "6", "2", "3"]
+
+const map1 = favouriteNumbers.map(x => x * 2); // Multiplies each element in the array, x, by 2
+
+console.log(map1) // [ 8, 12, 4, 6 ]
+```
+
+```javascript
+
+//array.pop() - Removes the last item from an array and returns that item
+let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
+
+console.log(beaches.pop()) // Rainbow
+
+```
+
+```javascript
+
+//array.push() - Adds additional elements to the end of an array and returns the new length
+let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
+
+console.log(beaches.push("Mermaid")) // 5
+
+console.log(beaches) // [ 'Burleigh', 'Miami', 'Kirra', 'Rainbow', 'Mermaid' ]
+
+```
+
+```javascript
+
+//array.reverse() - Reverses an array's contents
+let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
+
+console.log(beaches.reverse()) // [ 'Rainbow', 'Kirra', 'Miami', 'Burleigh' ]
+
+```
+
+```javascript
+
+//array.shift() - Removes the first element and returns the removed element
+let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
+
+console.log(beaches.shift()) // 
+
+console.log(beaches) // [ 'Miami', 'Kirra', 'Rainbow' ]
+
+```
 
 # Q11
 

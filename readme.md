@@ -92,7 +92,80 @@ Explain data types, using examples from the JavaScript programming language
 
 **Answer:**
 
+A data type is a attribute given to data describe what kind of format and structure it must adhere to. In computer science, the type assigned to a value tells the interpreted language or its compiler how it should behave.
 
+In JavaScript (ECMAScript standards), nine data and structure types are defined:
+
+- BigInt
+    * Numeric type that represents integer values with an arbitrary or unpredictable position. Used when appending `n` at end of a given integer. 
+        *Example:*
+        ```javascript
+        let largeNumber = 3n ** 64n; // 3433683820292512484657849089281n
+        ```
+- Boolean
+    * Boolean represents a logical entity which can only have two values: true and false. Application used for conditional testing, boolean algebra and relations.
+    *Example:*
+        ```javascript
+        let x = true
+        let y = false
+        x == y // false
+        let a = 5
+        let b = 10
+        a < b // true
+        ```
+- null
+    * Represents a nonexistent data that when assigned a null data type no longer exists.
+    *Example*
+      ```javascript
+      let hobbies = ["reading", "writing", "long walks at the beach"]
+      person = null // Person is now null. Type becomes an object
+      ```
+- Number
+    * Represents numbers between -(253 − 1) and 253 − 1) (BigInt to express numbers outside this range. Can express integers with decimal point.
+    *Example*
+      ```javascript
+      let num1 = 64
+      let num2 = 64.00
+      ```
+- Object
+    * Denoted using `{}`, objects contain data of key:value pairs.
+    *Example*
+        ```javascript
+        let person = {
+          hair: "blond"
+          eyes: "blue"
+        }
+        ```
+- Function
+    * Functions are objects with the added ability to be callable.
+    *Example*
+      ```javascript
+      function myFunction() { //ES5
+        return "Hello!"
+      }
+
+      function myFunction = () => { //ES6
+        return "Hello!"
+      }
+      ```
+- String
+  * Represents text data. Written in quotes, contains series of characters.
+      *Example*
+      ```javascript
+      let aboutme = "I am Aiden Waring! - 24." // Valid string entry using alphanumeric characters
+      ```
+
+- undefined
+    * The value given to a declared variable with no defined data.
+    *Example*
+      ```javascript
+      const data // Value is not defined
+      ```
+
+Examples
+
+References Used:
+[1](https://developer.mozilla.org/en-US/docs/Glossary/Type), [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 ## Q10
 

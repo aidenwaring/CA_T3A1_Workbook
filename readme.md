@@ -92,6 +92,8 @@ Explain data types, using examples from the JavaScript programming language
 
 **Answer:**
 
+
+
 ## Q10
 
 Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
@@ -104,7 +106,7 @@ Explain how objects can be manipulated in JavaScript, using examples from the Ja
 
 **Answer:**
 
-An object in JavaScript, similar to many other programming languages, is an assortment of related data and its properties. JavaScript object properties can be accessed using dot or square bracket notation in the following formats:
+An object in JavaScript, similar to many other programming languages, is an assortment of related data and its properties. These collections of data are stored as collections of key:value pairs. JavaScript object properties can be accessed using dot or square bracket notation in the following formats:
 
 ```javascript
 myObject.propertyName
@@ -112,8 +114,9 @@ myObject["propertyName"]
 ```
 
 For the below literal object, the property can be manipulated and updated using dot notation to assign the property of the phone object a new value:
+
 ```javascript
-const phone = {
+let phone = {
   make: 'Apple',
   model: 'iPhone X',
   year: 2017
@@ -134,10 +137,65 @@ function Car(make, model, year) {
 
 let myCar = new Car("Toyota", "Hilux", 2020)
 myCar.year = 2021
-console.log(test) // Car { make: 'toyota', model: 'hilux', year: 2021 }
+console.log(myCar) // Car { make: 'toyota', model: 'hilux', year: 2021 }
 ```
-[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 
+We can assign the value of myCar.year a new value, manipulating the value for the stance of Car 'myCar'.
+
+In modern JavaScript there are several methods that allow you to manipulate, view or alter an object. 
+
+Using the JavaScript keyword ``this`` you can refer to the current object within a method.
+
+*Adding a Method to an Object with expression interpolation*
+
+```javascript
+let person = {
+  firstName: "Aiden",
+  lastName : "Waring",
+}
+person.name = function() {
+  return this.firstName + " " + this.lastName;
+}
+
+console.log("My name is " + person.name()) // My name is Aiden Waring
+```
+
+*Looping over an Object*
+
+The for...in loop will iterate over each of the object's properties and will perform a given action for each item within the object. In our case the below code outputs a string of the names object's name and value.
+
+```javascript
+let numberOfPizzas = {pepperoni: 1, hawaiian: 2, vego: 3}
+
+for (pizza in numberOfPizzas) {
+  console.log(`There are ${numberOfPizzas[pizza]} ${pizza} pizzas at the party.`)
+}
+
+/* Result:
+There are 1 pepperoni pizzas at the party.
+There are 2 hawaiian pizzas at the party.
+There are 3 vego pizzas at the party. */
+```
+
+JavaScript contains many inbuilt methods for objects that further manipulate its contents:
+
+*Deleting properties*
+
+```javascript
+let myObject = {
+  a: 1,
+  b: 2
+} // { a: 1, b: 2 }
+
+delete myObject.a 
+console.log(myObject) //{ b: 2 }
+
+```
+
+Other inbuild functions include .freeze(), which freezes a given object preventing code from changing or deleting it's paramaters, .keys() which returns an array of the keys in the object and much more. The full list of these functions can be found on on the [MDN web docs here.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+References Used:
+[1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in), [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects), [3](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 ## Q12
 

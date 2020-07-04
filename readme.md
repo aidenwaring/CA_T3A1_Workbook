@@ -22,19 +22,18 @@ ACME Corporation is looking for devs with an understanding of Rails. The followi
 
 Provide an overview and description of a standard source control process for a large project
 
-
-*CMP1043-2.1 Provide an overview and description of your source control process.*
-*Provides an extensive overview and description of a standard source control process*
+_CMP1043-2.1 Provide an overview and description of your source control process._
+_Provides an extensive overview and description of a standard source control process_
 
 **Answer:**
-*From Workbook 2*
+_From Workbook 2_
 Source control workflow refers to the recommended steps and procedure adhered to in a source control environment. Developers utilising a source control system can contribute and work in different ways. The workflow concept is a design that defines the rules versioning, branching and the control of the master branch.
 [Reference](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 A popular standard workflow practiced by developers is the centralized workflow.
 In a centralized workflow, developers all contribute to a shared repository (as opposed to fork-pull workflow. This central repository is often created and hosted on source control hosting services such as Bitbucket or GitHub.
 
-Problems arise when publishing or "pushing" to the central repository without following a source control workflow. The centralized workflow, sometimes referred to as feature branch workflow, ensures that all code changes are made in new, feature-specific branches instead of master. These feature branches are created on the repository for code changes. Developers will make changes and edit files committing locally and synchronising upstream at a convenient time. Reviewed changes can then be "pulled" back into the shared repositories master branch by initiating a pull request. The request can then either be accepted or denied. Accepted pull requests then see new code "merged" into the master branch. 
+Problems arise when publishing or "pushing" to the central repository without following a source control workflow. The centralized workflow, sometimes referred to as feature branch workflow, ensures that all code changes are made in new, feature-specific branches instead of master. These feature branches are created on the repository for code changes. Developers will make changes and edit files committing locally and synchronising upstream at a convenient time. Reviewed changes can then be "pulled" back into the shared repositories master branch by initiating a pull request. The request can then either be accepted or denied. Accepted pull requests then see new code "merged" into the master branch.
 
 This segmentation of new code and it's staged change control methodology ensures that the master branch remains valid, stable and conflict-free. This approach is often employed by organisations for in-house development.
 [Reference](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
@@ -92,7 +91,8 @@ In JavaScript, data can be either implicitly coerced or explicitly coerced using
 
 Type conversions can be implicitly or explicitly made. In JavaScript is automatically performed. The MDN refers implicit conversion of values from one type to another type.
 
-*Example:*
+_Example:_
+
 ```javascript
 let var1 = 5
 let var2 = "5"
@@ -102,7 +102,7 @@ let sum = var1 + var2
 console.log(sum) // 55
 ```
 
-This above code treats a variable of one data type as if it belongs to a different data type. The example demonstrates coercion of the value of `5` from var1 into a string. These two strings are then concatenated together to result in the string of `55` being logged. 
+This above code treats a variable of one data type as if it belongs to a different data type. The example demonstrates coercion of the value of `5` from var1 into a string. These two strings are then concatenated together to result in the string of `55` being logged.
 In this case we will require explicit coercion and is performed by certain syntactic instructions. In JavaScript, we will need to be explicitly tell it to convert the number `5` to a number using the `Number()` method.
 
 ```javascript
@@ -112,7 +112,8 @@ sum = Number(var2) + var1
 Another example where JavaScript performs type coercion is with the equals `=` opertion.
 The `==` operator performs an 'equal to' operation on a set of values to determine if the result is true or false. With this syntax. When `==` is used, the code will check for equality once any type conversions found within the operation are performed. The `===` operator however will not perform any coercion and will strictly compare the values as their current data type.
 
-*Example:*
+_Example:_
+
 ```javascript
 5 == "5" // True
 
@@ -121,7 +122,6 @@ The `==` operator performs an 'equal to' operation on a set of values to determi
 
 References Used:
 [1](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
-
 
 ## Q9
 
@@ -134,70 +134,62 @@ A data type is a attribute given to data describe what kind of format and struct
 In JavaScript (ECMAScript standards), nine data and structure types are defined:
 
 - BigInt
-    * Numeric type that represents integer values with an arbitrary or unpredictable position. Used when appending `n` at end of a given integer. 
-        *Example:*
-        ```javascript
-        let largeNumber = 3n ** 64n; // 3433683820292512484657849089281n
-        ```
+  - Numeric type that represents integer values with an arbitrary or unpredictable position. Used when appending `n` at end of a given integer.
+    _Example:_
+    ```javascript
+    let largeNumber = 3n ** 64n // 3433683820292512484657849089281n
+    ```
 - Boolean
-    * Boolean represents a logical entity which can only have two values: true and false. Application used for conditional testing, boolean algebra and relations.
-    *Example:*
-        ```javascript
-        let x = true
-        let y = false
-        x == y // false
-        let a = 5
-        let b = 10
-        a < b // true
-        ```
+  - Boolean represents a logical entity which can only have two values: true and false. Application used for conditional testing, boolean algebra and relations.
+    _Example:_
+    `javascript let x = true let y = false x == y // false let a = 5 let b = 10 a < b // true`
 - null
-    * Represents a nonexistent data that when assigned a null data type no longer exists.
-    *Example:*
-      ```javascript
-      let hobbies = ["reading", "writing", "long walks at the beach"]
-      person = null // Person is now null. Type becomes an object
-      ```
+  - Represents a nonexistent data that when assigned a null data type no longer exists.
+    _Example:_
+    ```javascript
+    let hobbies = ["reading", "writing", "long walks at the beach"]
+    person = null // Person is now null. Type becomes an object
+    ```
 - Number
-    * Represents numbers between -(253 − 1) and 253 − 1) (BigInt to express numbers outside this range. Can express integers with decimal point.
-    *Example:*
-      ```javascript
-      let num1 = 64
-      let num2 = 64.00
-      ```
+  - Represents numbers between -(253 − 1) and 253 − 1) (BigInt to express numbers outside this range. Can express integers with decimal point.
+    _Example:_
+    ```javascript
+    let num1 = 64
+    let num2 = 64.0
+    ```
 - Object
-    * Denoted using `{}`, objects contain data of key:value pairs.
-    *Example:*
-        ```javascript
-        let person = {
-          hair: "blond"
-          eyes: "blue"
-        }
-        ```
+  - Denoted using `{}`, objects contain data of key:value pairs.
+    _Example:_
+    `javascript let person = { hair: "blond" eyes: "blue" }`
 - Function
-    * Functions are objects with the added ability to be callable.
-    *Example:*
-      ```javascript
-      function myFunction() { //ES5
-        return "Hello!"
-      }
 
-      function myFunction = () => { //ES6
-        return "Hello!"
-      }
-      ```
+  - Functions are objects with the added ability to be callable.
+    _Example:_
+
+    ```javascript
+    function myFunction() { //ES5
+      return "Hello!"
+    }
+
+    function myFunction = () => { //ES6
+      return "Hello!"
+    }
+    ```
+
 - String
-  * Represents text data. Written in quotes, contains series of characters.
-      *Example:*
-      ```javascript
-      let aboutme = "I am Aiden Waring! - 24." // Valid string entry using alphanumeric characters
-      ```
+
+  - Represents text data. Written in quotes, contains series of characters.
+    _Example:_
+    ```javascript
+    let aboutme = "I am Aiden Waring! - 24." // Valid string entry using alphanumeric characters
+    ```
 
 - undefined
-    * The value given to a declared variable with no defined data.
-    *Example:*
-      ```javascript
-      const data // Value is not defined
-      ```
+  - The value given to a declared variable with no defined data.
+    _Example:_
+    ```javascript
+    const data // Value is not defined
+    ```
 
 References Used:
 [1](https://developer.mozilla.org/en-US/docs/Glossary/Type), [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
@@ -207,6 +199,10 @@ References Used:
 Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 **Answer:**
+
+In JavaScript, an array is a collection or store of a number of elements. These collections of data are stored in an array data type and may contain elements of various different data types. These list-like objects have no fixed length, nor are the types of each element in it. Properties such as the array's length and the location of the elements within the array can be manipulated. Items within the array can be set and updated by using (square) bracket `[]` notation and providing the integer index value of the associated value.
+
+
 
 # Q11
 
@@ -225,9 +221,9 @@ For the below literal object, the property can be manipulated and updated using 
 
 ```javascript
 let phone = {
-  make: 'Apple',
-  model: 'iPhone X',
-  year: 2017
+  make: "Apple",
+  model: "iPhone X",
+  year: 2017,
 }
 
 phone.year = 2018
@@ -238,9 +234,9 @@ Manipulating the data contained within these objects can be done for objects def
 
 ```javascript
 function Car(make, model, year) {
-  this.make = make;
-  this.model = model;
-  this.year = year;
+  this.make = make
+  this.model = model
+  this.year = year
 }
 
 let myCar = new Car("Toyota", "Hilux", 2020)
@@ -250,33 +246,35 @@ console.log(myCar) // Car { make: 'toyota', model: 'hilux', year: 2021 }
 
 We can assign the value of myCar.year a new value, manipulating the value for the stance of Car 'myCar'.
 
-In modern JavaScript there are several methods that allow you to manipulate, view or alter an object. 
+In modern JavaScript there are several methods that allow you to manipulate, view or alter an object.
 
-Using the JavaScript keyword ``this`` you can refer to the current object within a method.
+Using the JavaScript keyword `this` you can refer to the current object within a method.
 
-*Adding a Method to an Object with expression interpolation*
+_Adding a Method to an Object with expression interpolation_
 
 ```javascript
 let person = {
   firstName: "Aiden",
-  lastName : "Waring",
+  lastName: "Waring",
 }
-person.name = function() {
-  return this.firstName + " " + this.lastName;
+person.name = function () {
+  return this.firstName + " " + this.lastName
 }
 
 console.log("My name is " + person.name()) // My name is Aiden Waring
 ```
 
-*Looping over an Object*
+_Looping over an Object_
 
 The for...in loop will iterate over each of the object's properties and will perform a given action for each item within the object. In our case the below code outputs a string of the names object's name and value.
 
 ```javascript
-let numberOfPizzas = {pepperoni: 1, hawaiian: 2, vego: 3}
+let numberOfPizzas = { pepperoni: 1, hawaiian: 2, vego: 3 }
 
 for (pizza in numberOfPizzas) {
-  console.log(`There are ${numberOfPizzas[pizza]} ${pizza} pizzas at the party.`)
+  console.log(
+    `There are ${numberOfPizzas[pizza]} ${pizza} pizzas at the party.`
+  )
 }
 
 /* Result:
@@ -287,17 +285,16 @@ There are 3 vego pizzas at the party. */
 
 JavaScript contains many inbuilt methods for objects that further manipulate its contents:
 
-*Deleting properties*
+_Deleting properties_
 
 ```javascript
 let myObject = {
   a: 1,
-  b: 2
+  b: 2,
 } // { a: 1, b: 2 }
 
-delete myObject.a 
+delete myObject.a
 console.log(myObject) //{ b: 2 }
-
 ```
 
 Other inbuild functions include .freeze(), which freezes a given object preventing code from changing or deleting it's paramaters, .keys() which returns an array of the keys in the object and much more. The full list of these functions can be found on on the [MDN web docs here.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
@@ -345,22 +342,22 @@ Below is an example of a formatted JSON string:
 
 **JSON Manipulation:**
 
-Using the JavaScript function ``JSON.parse(params)`` contents can be parsed from string data type into a JavaScript object, where params represents the JSON data.
+Using the JavaScript function `JSON.parse(params)` contents can be parsed from string data type into a JavaScript object, where params represents the JSON data.
 
 To access this information within JavaScript (.js), we parse it with **JSON.parse()** to convert the string to JavaScript object syntax.
 
 ```javascript
-const data = '{"trainerName": "Red","homeTown": "Pallet Town","born": 1996,"partyPokemon": [{"name": "Pikachu","level": 81,"type": "Electric","moves": ["Charm", "Quick Attack", "Thunderbolt", "Thunder"]},{"name": "Blastoise","level": 84,"type": "Water","moves": ["Rain Dance", "Blizzard", "Surf", "Whirlpool"]},{"name": "Snorlax","level": 75,"type": "Normal","moves": ["Amnesia", "Snore", "Rest", "Body Slam"]}]}'
+const data =
+  '{"trainerName": "Red","homeTown": "Pallet Town","born": 1996,"partyPokemon": [{"name": "Pikachu","level": 81,"type": "Electric","moves": ["Charm", "Quick Attack", "Thunderbolt", "Thunder"]},{"name": "Blastoise","level": 84,"type": "Water","moves": ["Rain Dance", "Blizzard", "Surf", "Whirlpool"]},{"name": "Snorlax","level": 75,"type": "Normal","moves": ["Amnesia", "Snore", "Rest", "Body Slam"]}]}'
 
 const pokedata = JSON.parse(data)
 
 console.log(pokedata.trainerName) // "Red"
 console.log(pokedata["trainerName"]) // "Red"
 console.log(pokedata.partyPokemon[0].name) // Pikachu
-
 ```
 
-To convert a JavaScript object to JSON, we use the method **JSON.stringify()** instead. 
+To convert a JavaScript object to JSON, we use the method **JSON.stringify()** instead.
 
 ```javascript
 let object = {
@@ -371,9 +368,9 @@ let object = {
       name: "Arcanine",
       level: 63,
       type: "Fire",
-      moves: ["Roar", "Leer", "Ember", "Take Down"]
-    }
-  ]
+      moves: ["Roar", "Leer", "Ember", "Take Down"],
+    },
+  ],
 }
 
 let bluepokedata = JSON.stringify(object) // {"trainerName":"Blue","born":1996,"partyPokemon":[{"name":"Arcanine","level":63,"type":"Fire","moves":["Roar","Leer","Ember","Take Down"]}]}
@@ -386,40 +383,38 @@ For the code snippet provided below, write comments for each line of code to exp
 ```javascript
 class Car {
   constructor(brand) {
-    this.carname = brand;
+    this.carname = brand
   }
   present() {
-    return 'I have a ' + this.carname;
+    return "I have a " + this.carname
   }
 }
 
 class Model extends Car {
   constructor(brand, mod) {
-    super(brand);
-    this.model = mod;
+    super(brand)
+    this.model = mod
   }
   show() {
-    return this.present() + ', it was made in ' + this.model;
+    return this.present() + ", it was made in " + this.model
   }
 }
 
 let makes = ["Ford", "Holden", "Toyota"]
-let models = Array.from(new Array(40), (x,i) => i + 1980)
+let models = Array.from(new Array(40), (x, i) => i + 1980)
 
-function randomIntFromInterval(min,max) { // min and max included
-    return Math.floor(Math.random()*(max-min+1)+min);
+function randomIntFromInterval(min, max) {
+  // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 for (model of models) {
+  make = makes[randomIntFromInterval(0, makes.length - 1)]
+  model = models[randomIntFromInterval(0, makes.length - 1)]
 
-  make = makes[randomIntFromInterval(0,makes.length-1)]
-  model = models[randomIntFromInterval(0,makes.length-1)]
-    
-  mycar = new Model(make, model);
+  mycar = new Model(make, model)
   console.log(mycar.show())
 }
-
-
 ```
 
 **Answer:**

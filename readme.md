@@ -23,6 +23,7 @@ ACME Corporation is looking for devs with an understanding of Rails. The followi
 Provide an overview and description of a standard source control process for a large project
 
 **Answer:**
+
 Source control workflow refers to the recommended steps and procedure adhered to in a source control environment. Developers utilising a source control system can contribute and work in different ways. The workflow concept is a design that defines the rules versioning, branching and the control of the master branch.
 
 A popular standard workflow practiced by developers is the centralized workflow.
@@ -102,11 +103,66 @@ A team is about to engage in a project, developing a website for a small busines
 
 **Answer:**
 
+The skills to successfully develop a website are numerous and go much further beyond the technical programming skills. A combination of development expertise and knowledge, client communication and negotiation, testing and project management are required.
+
+Throughout the many phases of a web project's lifespan, many skills are required at each.
+
+- Project Management
+- Project Manager / Team Lead Hired or Designated
+- Development Workflow Planned
+- Roles Assignment
+- Time Management
+- Source Control
+- Hosting Providers
+- Cloud Services
+- Domain Registration and Domain Hosting Purchase & Configuration
+- Development of Application
+- Programming using HTML5, CSS/SCSS/SASS,
+- Front-End & Back-End Development with environments of their choice
+- UX and UI Design
+- User Testing and Feedback
+- Marketing and Product Launch Schedule
+- SEO Listing and Promotion
+- Launch
+- Pre-Launch and Post-Launch Testing
+
 ## Q5
 
 With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
 
 **Answer:**
+
+Referencing my work in the Ruby on Rails project for Coder Academy, there were a number of skills required to complete the project and many challenges that were overcome.
+
+Programming competencies required to design and create the application were as follows:
+
+- HTML5
+  - Used in the view components in Rails' MVC structure, formatting web page content to the user
+- CSS3
+  - Used in styling web page elements for view components in Rails' MVC structure
+- Ruby on Rails
+  - Used as the framework for the two-sided market place application. Required for the project's core objectives. Used to provide MVC structure to coding components, routing for web page navigation and database queries
+- Ruby
+  - Ruby code was used within the rails controller components, interpolated in to provide programming operations and data structures to web application
+- Source Control
+  - GitHub was used as the source control system to manage the project's repository and source control changes to the application during its development
+- Cloud Services
+  - Amazon S3 Buckets and Cloudinary were both used to provide a cloud service for hosting the application's database and image data sets respectively
+- Kanban-Style Project Planning Tool
+  - Trello was used to plan project scope, assign deadlines to MVP components and list user stories for testing and objective tracking throughout development
+- Entity Relation Diagram
+  - An understanding of entity relationship diagrams and planning the project using this format was used. The Lucid Chart cloud software was used to design the application's ERD
+- Website Deployment Service
+  - Heroku was utilised to host the deployed web page online for public use
+
+The skills required to complete the project are more than simply the technologies required. The demonstration of the following personal attributes, or 'soft skills' as the industry calls them, were also required:
+
+- Project Management
+  - Core concepts of managing and planning a project such as the different phases of a project's implementation were closely adhered to and followed
+- Agile Project Delivery Process
+  - Agile project delivery philosophy was followed during the project's development
+- Time Management
+  - Project objectives, user stories and project deliverables such as the documentation were each assigned weighted scores (small, medium, large), each representing the amount of time required for the completion of the component
 
 ## Q6
 

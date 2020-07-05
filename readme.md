@@ -120,7 +120,19 @@ With reference to one of your own projects, evaluate how effective your knowledg
 
 //Evaluates effectiveness of knowledge and skills accurately, providing examples, and providing an insightful improvement on each skill
 
+Reflecting upon my time completing my time completing my first Ruby assessment for Codey Academy, I can identify both my strenghts and weaknesses in my knowledge and skills.
+At that time, I was finishing up the remainder of my full-time work at my previous workplace and was only participating in 50% of the classes that was teaching the basics for programming within Ruby. At the time that the first assessment was provided to us, I had only just caught up with the learning content to produce the application. I knew going in to the 'sprints' and applying what I had just learned, I had to focus on completing an MVP - the most complete version of the project.
 
+| Skill  | Insight |
+| ------------- | ------------- |
+| Documentation  | While generally covering the major points of the program such as the software development plan, feature outline and application flow diagram, the contents could have been expanded upon in greater detail  |
+| Ruby Functions  | Solid understanding of syntactic expressions, but could have been formatted much neater  |
+| Control Flow  | Understanding of control flow and calling methods was basic at the time, and could now be expanded upon. Parts of the program could have been passed as expressions or parameters to other methods that required this information  |
+| Project Planning | Planning phase of application was strong, as all key features for the MVP were clearly defined before coding was started |
+| Time Management | Not all planned parts of the application were implemented before the deadline. My time on each component of the MVP could have been changed |
+|Project Scope | The scope of the project was changed to remove many non-MVP components to reach the deadline |
+| Presentation | I am confident that my ability to present to the classroom and demonstrate the application and its features was successful |
+| Git | Using Git, while in a limited capacity was a success after learning how to use it not long before the project had begun|
 
 ## Q7
 

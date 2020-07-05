@@ -118,6 +118,10 @@ With reference to one of your own projects, evaluate how effective your knowledg
 
 **Answer:**
 
+//Evaluates effectiveness of knowledge and skills accurately, providing examples, and providing an insightful improvement on each skill
+
+
+
 ## Q7
 
 Explain control flow, using an example from the JavaScript programming language

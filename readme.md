@@ -79,6 +79,85 @@ Explain control flow, using an example from the JavaScript programming language
 
 **Answer:**
 
+As is the case in many programming languages, JavaScript utilises the concept of control flow which defines the order of instructions that the program executes its code.
+
+JavaScript's different control flow sets known as control flow statements have different syntax and helps define attributes of the program such as scope and the order of events.
+
+A block statement is the simplest of these control flow statements. Variables defined within a block are scoped to within that limited to its range with the exception of `var` variables. Blocks are delimited with `{}` curly brackets. The below example demonstrates blocks and the scope of declarations within it.
+
+```javascript
+{
+  let text1 = "Hello" // Block level scope variable
+  var text2 = "Hey" // Global scope level variable
+  const text3 = "G'day" // Block level, read only constant variable
+
+  console.log(text3) // G'day
+}
+
+console.log(test2) // Hello
+console.log(test) // ReferenceError: test2 is not defined
+```
+
+Blocks are often used in conjunction with other control flow statements such as `if`, `while`, `for`.
+
+If-else control flow statements directs code if a certain condition is met - if the condition is true, a certain block of code is executed. If the condition is false, a different code block is executed.
+
+```javascript
+let age = 24
+if (age > 18) {
+  console.log("You are an adult!")
+} else {
+  console.log("Too young!")
+}
+// Ternary operator can alternatively be used condition ? expression1 : expression2;
+```
+
+Blocking the below statement encloses a conditional statement.
+
+```javascript
+let x = 0
+
+while (x < 10) {
+  console.log(x++)
+  /* 0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9 */
+}
+```
+
+A switch statement functions similarly to an if-else, however it is used to match an expression to what's known as a case label. The evaulation returns true if the parameter matches a given result or case label.
+
+```javascript
+foodChoice = "Brocolli"
+
+switch (
+  foodChoice // The switch statement's parameter is equal to the case label for Brocolli
+) {
+  case "Brocolli":
+    console.log("I like Brocolli")
+    break
+  case "Tomato":
+    console.log("I like Tomato!")
+    break
+  default:
+    console.log("I like most vegetables.")
+    break
+}
+```
+
+Blocking is also used for error handling in JavaScript in the use of try-catch blocks, which tells the program to try execute a block of code and capture any exceptions that may be raised, seperating the concerns of each.
+
+References Used:
+
+[1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling), [2](https://www.javascripttutorial.net/javascript-ternary-operator/)
+
 ## Q8
 
 Explain type coercion, using examples from the JavaScript programming language
@@ -202,96 +281,81 @@ Explain how arrays can be manipulated in JavaScript, using examples from the Jav
 
 In JavaScript, an array is a collection or store of a number of elements. These collections of data are stored in an array data type and may contain elements of various different data types. These list-like objects have no fixed length, nor are the types of each element in it. Properties such as the array's length and the location of the elements within the array can be manipulated. Items within the array can be set and updated by using (square) bracket `[]` notation and providing the integer index value of the associated value. The below code demonstrates creating a new array.
 
-*Example:*
+_Example:_
 
 ```javascript
-
 // Creates new array with string contents
 let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
 console.log(beaches.length) // 4
 console.log(beaches) // [ 'Burleigh', 'Miami', 'Kirra', 'Rainbow' ]
 ```
 
-
 JavaScript includes a large number of inbuilt array methods that can be used to manipulate arrays and its contents. Outlined are a number of examples for commonly used array manipulation methods:
 
-*Example:*
+_Example:_
 
 ```javascript
-
 //array.join() - Returns new string concatenating all elements with a separator string
 let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
 
-console.log(beaches.join('')) // BurleighMiamiKirraRainbow
-console.log(beaches.join('-')) // Burleigh-Miami-Kirra-Rainbow
+console.log(beaches.join("")) // BurleighMiamiKirraRainbow
+console.log(beaches.join("-")) // Burleigh-Miami-Kirra-Rainbow
 ```
 
 ```javascript
 //array.map() - Creates a new array with the results of a callback function performed on each element within the array
 let favouriteNumbers = ["4", "6", "2", "3"]
 
-const map1 = favouriteNumbers.map(x => x * 2); // Multiplies each element in the array, x, by 2
+const map1 = favouriteNumbers.map((x) => x * 2) // Multiplies each element in the array, x, by 2
 
 console.log(map1) // [ 8, 12, 4, 6 ]
 ```
 
 ```javascript
-
 //array.pop() - Removes the last item from an array and returns that item
 let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
 
 console.log(beaches.pop()) // Rainbow
-
 ```
 
 ```javascript
-
 //array.push() - Adds additional elements to the end of an array and returns the new length
 let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
 
 console.log(beaches.push("Mermaid")) // 5
 
 console.log(beaches) // [ 'Burleigh', 'Miami', 'Kirra', 'Rainbow', 'Mermaid' ]
-
 ```
 
 ```javascript
-
 //array.reverse() - Reverses an array's contents
 let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
 
 console.log(beaches.reverse()) // [ 'Rainbow', 'Kirra', 'Miami', 'Burleigh' ]
-
 ```
 
 ```javascript
-
 //array.shift() - Removes the first element and returns the removed element
 let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
 
-console.log(beaches.shift()) // 
+console.log(beaches.shift()) //
 
 console.log(beaches) // [ 'Miami', 'Kirra', 'Rainbow' ]
-
 ```
 
 ```javascript
-
 //array.slice() - Returns a portion of an array into a new array selected from a start and end representing the index of items within the collection
 let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
 // slice(start,end)
 console.log(beaches.slice(2)) // [ 'Kirra', 'Rainbow' ]
-console.log(beaches.slice(1,2)) // [ 'Miami' ]
-
+console.log(beaches.slice(1, 2)) // [ 'Miami' ]
 ```
 
 ```javascript
-
-//array.toSring() - Returns a string representing the contents of an array 
+//array.toSring() - Returns a string representing the contents of an array
 let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
 
 console.log(beaches.toString()) // Burleigh,Miami,Kirra,Rainbow
-
 ```
 
 # Q11

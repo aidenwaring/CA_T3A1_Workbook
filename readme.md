@@ -22,11 +22,7 @@ ACME Corporation is looking for devs with an understanding of Rails. The followi
 
 Provide an overview and description of a standard source control process for a large project
 
-_CMP1043-2.1 Provide an overview and description of your source control process._
-_Provides an extensive overview and description of a standard source control process_
-
 **Answer:**
-_From Workbook 2_
 Source control workflow refers to the recommended steps and procedure adhered to in a source control environment. Developers utilising a source control system can contribute and work in different ways. The workflow concept is a design that defines the rules versioning, branching and the control of the master branch.
 
 A popular standard workflow practiced by developers is the centralized workflow.
@@ -34,9 +30,9 @@ In a centralized workflow, developers all contribute to a shared repository (as 
 
 With reference to my first group project as part of a hackathon with my fellow Coder Academy students, we utilised this strategy of source control. As we had to all work on the same code simultaneously, our team utilised a centralized workflow by having our source code available on GitHub, with each member being listed as a contributor and the chosen team leader owning the repository. This approach is often employed by organisations for in-house development, and was a perfect fit for our team's goals and remote-work environment.
 
-We decided it be best to each utilise the 'feature-branch' design philosophy. This ensured that all code changes were made in new, feature-specific branches instead of master. Each member had a certain part of the application to work on. Each component was broken up into a different feature branch. These feature branches are created on the repository for code changes. Our tem made changes and edited files committing locally and synchronising upstream at a convenient time. Reviewed changes were then  "pulled" back into the shared repositories master branch by initiating a pull request once we had decided that there were no conflicts and that the branch contained working content relevant to the master branch and to the application's objectives.
+We decided it be best to each utilise the 'feature-branch' design philosophy. This ensured that all code changes were made in new, feature-specific branches instead of master. Each member had a certain part of the application to work on. Each component was broken up into a different feature branch. These feature branches are created on the repository for code changes. Our team made changes and edited files committing locally and synchronising upstream at a convenient time. Reviewed changes were then "pulled" back into the shared repositories master branch by initiating a pull request once we had decided that there were no conflicts and that the branch contained working content relevant to the master branch and to the application's objectives.
 
-This segmentation of new code and it's staged change control methodology ensured that the master branch remained valid, stable and conflict-free. 
+This segmentation of new code and it's staged change control methodology ensured that the master branch remained valid, stable and conflict-free.
 
 In conjunction with using GitHub for source control, other processes we followed as part of our project was using a software development plan. Our team used Trello for planning the application's scope and user stories. Our developers were able to successfully communicate their plans via WhatsApp and Slack platforms and assist each other using Visual Studio Code's Live Share functionality.
 
@@ -51,8 +47,8 @@ What are the most important aspects of quality software?
 
 As the field of software development and engineering has continued to evolve over the years, so has the standards for quality software. Factors that determine the quality of software are oriented to the success of the software in relation to the customers and the developers. Aspects of the software attributed to this are as follows:
 
-Reliability: 
-Quality software is that when it operates in a consistent manner. Software when run multiple times should provide consistent results and returning rarely any errors if any at all. A user's experience with the software should never have them question or doubt the software in the sense of it performing correctly. 
+Reliability:
+Quality software is that when it operates in a consistent manner. Software when run multiple times should provide consistent results and returning rarely any errors if any at all. A user's experience with the software should never have them question or doubt the software in the sense of it performing correctly.
 
 Efficiency:
 Quality software is efficient - only using the resources required to perform its designated task. Examples of inefficient software may be those consuming more memory or server resources than it should, battery life from the device or internet bandwidth. An efficient application is also measured in time such as the time the job takes to complete the process. The application must be designed so that algorithms are chosen and implemented correctly so that the code used to produce the expected outcome is as optimal as possible, reducing Big-O complexity and increasing productivity.
@@ -67,7 +63,7 @@ Testability:
 The core functionality of the application must be easily tested. Software that cannot produce clear and easily repeatable use cases is not considered quality.
 
 Portability:
-Quality software is considered portable which means that it can be used in different environments. Quality software can also be moved from one environment to another without a complete overhaul. Software designed to be decoupled and non-propriatery from an operating system is highly beneficial as it can be reused and is future-proofed.  
+Quality software is considered portable which means that it can be used in different environments. Quality software can also be moved from one environment to another without a complete overhaul. Software designed to be decoupled and non-proprietary from an operating system is highly beneficial as it can be reused and is future-proofed.
 
 References Used:
 
@@ -83,7 +79,7 @@ A MERN stack application is a web development framework 'stack', which encompass
 
 **M** - MongoDB
 
-- A NoSQL database program, MongoDB provides an application with a document-based database system. A document-based or oriented database system is disparent from a relational datbase system in it's data storage format due to it's lack of table rows and relations. MongoDB instead uses a document database, storing its data in "JSON-like documents". Search queries are structured to read through JSON formatted contents within documents. JavaScript can utilise this format efficiently due to the JSON format. MongoDB is used within this stack environment due to its speed, its aforementioned data model format and its use of JavaScript, which not onlyt makes development and data manipulation much more streamlined but also allows it to be integrated with the rest of the stack components nicely.
+- A NoSQL database program, MongoDB provides an application with a document-based database system. A document-based or oriented database system is different from a relational database system in it's data storage format due to it's lack of table rows and relations. MongoDB instead uses a document database, storing its data in "JSON-like documents". Search queries are structured to read through JSON formatted contents within documents. JavaScript can utilise this format efficiently due to the JSON format. MongoDB is used within this stack environment due to its speed, its aforementioned data model format and its use of JavaScript, which not only makes development and data manipulation much more streamlined but also allows it to be integrated with the rest of the stack components nicely.
 
 **E** - Express
 
@@ -91,7 +87,7 @@ A MERN stack application is a web development framework 'stack', which encompass
 
 **R** - React
 
-- React is Facebook's JavaScript library used for front-end web development. React is built for designing user interfaces and is 'component based', with seperate files and sections of the code coming together to compose user interface. React uses Babel, a JavaScript compiler, to allow developers to write JSX code and have it transpiled into JavaScript. JSX is an XML/HTML-like extension of JavaScript which React uses to implement ES6 functionality and HTML-like tags. React renders compiled components to the DOM. React applies changes to a webpage's user interface without refreshing the page through the use of component states.
+- React is Facebook's JavaScript library used for front-end web development. React is built for designing user interfaces and is 'component based', with separate files and sections of the code coming together to compose user interface. React uses Babel, a JavaScript compiler, to allow developers to write JSX code and have it transpiled into JavaScript. JSX is an XML/HTML-like extension of JavaScript which React uses to implement ES6 functionality and HTML-like tags. React renders compiled components to the DOM. React applies changes to a web page's user interface without refreshing the page through the use of component states.
 
 **N** - Node.js
 
@@ -118,19 +114,19 @@ With reference to one of your own projects, evaluate how effective your knowledg
 
 **Answer:**
 
-Reflecting upon my time completing my time completing my first Ruby assessment for Codey Academy, I can identify both my strenghts and weaknesses in my knowledge and skills.
+Reflecting upon my time completing my time completing my first Ruby assessment for Code Academy, I can identify both my strengths and weaknesses in my knowledge and skills.
 At that time, I was finishing up the remainder of my full-time work at my previous workplace and was only participating in 50% of the classes that was teaching the basics for programming within Ruby. At the time that the first assessment was provided to us, I had only just caught up with the learning content to produce the application. I knew going in to the 'sprints' and applying what I had just learned, I had to focus on completing an MVP - the most complete version of the project.
 
-| Skill  | Insight |
-| ------------- | ------------- |
-| Documentation  | While generally covering the major points of the program such as the software development plan, feature outline and application flow diagram, the contents could have been expanded upon in greater detail  |
-| Ruby Functions  | Solid understanding of syntactic expressions, but could have been formatted much neater  |
-| Control Flow  | Understanding of control flow and calling methods was basic at the time, and could now be expanded upon. Parts of the program could have been passed as expressions or parameters to other methods that required this information  |
-| Project Planning | Planning phase of application was strong, as all key features for the MVP were clearly defined before coding was started |
-| Time Management | Not all planned parts of the application were implemented before the deadline. My time on each component of the MVP could have been changed |
-|Project Scope | The scope of the project was changed to remove many non-MVP components to reach the deadline |
-| Presentation | I am confident that my ability to present to the classroom and demonstrate the application and its features was successful |
-| Git | Using Git, while in a limited capacity was a success after learning how to use it not long before the project had begun|
+| Skill            | Insight                                                                                                                                                                                                                           |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Documentation    | While generally covering the major points of the program such as the software development plan, feature outline and application flow diagram, the contents could have been expanded upon in greater detail                        |
+| Ruby Functions   | Solid understanding of syntactic expressions, but could have been formatted much neater                                                                                                                                           |
+| Control Flow     | Understanding of control flow and calling methods was basic at the time, and could now be expanded upon. Parts of the program could have been passed as expressions or parameters to other methods that required this information |
+| Project Planning | Planning phase of application was strong, as all key features for the MVP were clearly defined before coding was started                                                                                                          |
+| Time Management  | Not all planned parts of the application were implemented before the deadline. My time on each component of the MVP could have been changed                                                                                       |
+| Project Scope    | The scope of the project was changed to remove many non-MVP components to reach the deadline                                                                                                                                      |
+| Presentation     | I am confident that my ability to present to the classroom and demonstrate the application and its features was successful                                                                                                        |
+| Git              | Using Git, while in a limited capacity was a success after learning how to use it not long before the project had begun                                                                                                           |
 
 ## Q7
 
@@ -211,7 +207,7 @@ switch (
 }
 ```
 
-Blocking is also used for error handling in JavaScript in the use of try-catch blocks, which tells the program to try execute a block of code and capture any exceptions that may be raised, seperating the concerns of each.
+Blocking is also used for error handling in JavaScript in the use of try-catch blocks, which tells the program to try execute a block of code and capture any exceptions that may be raised, separating the concerns of each.
 
 References Used:
 
@@ -247,7 +243,7 @@ In this case we will require explicit coercion and is performed by certain synta
 sum = Number(var2) + var1
 ```
 
-Another example where JavaScript performs type coercion is with the equals `=` opertion.
+Another example where JavaScript performs type coercion is with the equals `=` operation.
 The `==` operator performs an 'equal to' operation on a set of values to determine if the result is true or false. With this syntax. When `==` is used, the code will check for equality once any type conversions found within the operation are performed. The `===` operator however will not perform any coercion and will strictly compare the values as their current data type.
 
 _Example:_
@@ -649,7 +645,7 @@ class Model extends Car {
   // Model class with Car inheritance
   constructor(brand, mod) {
     // Model constructor with two parameters, brand and mod
-    super(brand) // Extantiates brand parameter from parent Car class
+    super(brand) // Instantiates brand parameter from parent Car class
     this.model = mod // Defining mod with parameter input
   }
   show() {
@@ -669,7 +665,7 @@ function randomIntFromInterval(min, max) {
 for (model of models) {
   //For loop to iterate over the models array. Model contains 40 elements.
 
-  make = makes[randomIntFromInterval(0, makes.length - 1)] // Variable make is equal to the returned result of makes[randomIntFromInterval(0,makes.length-1)]. In our case as the makes array has a length of 3, this means the value of the parameter for the random functon is (0,2), as the length is subtracted by 1. This results in the function possibly randomly generating either a 0, a 1, a 2. The make variable is assigned the content given by this result. When a value is passed into makes[x] where x represents the number result of the random function, the variable make is assigned the returned value at the index of the makes array: either "Ford", "Holden" or "Toyota"
+  make = makes[randomIntFromInterval(0, makes.length - 1)] // Variable make is equal to the returned result of makes[randomIntFromInterval(0,makes.length-1)]. In our case as the makes array has a length of 3, this means the value of the parameter for the random function is (0,2), as the length is subtracted by 1. This results in the function possibly randomly generating either a 0, a 1, a 2. The make variable is assigned the content given by this result. When a value is passed into makes[x] where x represents the number result of the random function, the variable make is assigned the returned value at the index of the makes array: either "Ford", "Holden" or "Toyota"
   model = models[randomIntFromInterval(0, makes.length - 1)] // This code performs similarly to the line above where the random number result is either a 0, a 1 or a 2. In the case of the models array, this assigns at random the either the number 1980, 1981 or 1982 to the variable model.
 
   mycar = new Model(make, model) // mycar is an instance of the Model class which takes two variables make and model. When the program is run, the make and model are randomly generated and assigned from the result of the called random function. This process of creating a mycar instance of the Model class is repeated for each model in the models array.

@@ -49,6 +49,30 @@ What are the most important aspects of quality software?
 
 **Answer:**
 
+As the field of software development and engineering has continued to evolve over the years, so has the standards for quality software. Factors that determine the quality of software are oriented to the success of the software in relation to the customers and the developers. Aspects of the software attributed to this are as follows:
+
+Reliability: 
+Quality software is that when it operates in a consistent manner. Software when run multiple times should provide consistent results and returning rarely any errors if any at all. A user's experience with the software should never have them question or doubt the software in the sense of it performing correctly. 
+
+Efficiency:
+Quality software is efficient - only using the resources required to perform its designated task. Examples of inefficient software may be those consuming more memory or server resources than it should, battery life from the device or internet bandwidth. An efficient application is also measured in time such as the time the job takes to complete the process. The application must be designed so that algorithms are chosen and implemented correctly so that the code used to produce the expected outcome is as optimal as possible, reducing Big-O complexity and increasing productivity.
+
+Maintainability:
+Quality software is easily maintainable. Maintenance to update, manage or change the software in anyway should be as easy as possible, cost-effective and straight forward. The software should be designed so that future changes are accounted for and in a way that does not restrict or hinder changes to core features.
+
+Usability:
+Software should be designed in such a way that it is easy to use by both the end-user and the developers. Software should not require extensive documentation or time spent learning to operate. Quality software is easy to use and does not obfuscate the user experience in any way.
+
+Testability:
+The core functionality of the application must be easily tested. Software that cannot produce clear and easily repeatable use cases is not considered quality.
+
+Portability:
+Quality software is considered portable which means that it can be used in different environments. Quality software can also be moved from one environment to another without a complete overhaul. Software designed to be decoupled and non-propriatery from an operating system is highly beneficial as it can be reused and is future-proofed.  
+
+References Used:
+
+[1](https://www.softwaretestinghelp.com/what-are-the-quality-attributes/), [2](https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/)
+
 ## Q3
 
 Outline a standard high level structure for a MERN stack application and explain the components

@@ -275,6 +275,25 @@ console.log(beaches) // [ 'Miami', 'Kirra', 'Rainbow' ]
 
 ```
 
+```javascript
+
+//array.slice() - Returns a portion of an array into a new array selected from a start and end representing the index of items within the collection
+let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
+// slice(start,end)
+console.log(beaches.slice(2)) // [ 'Kirra', 'Rainbow' ]
+console.log(beaches.slice(1,2)) // [ 'Miami' ]
+
+```
+
+```javascript
+
+//array.toSring() - Returns a string representing the contents of an array 
+let beaches = ["Burleigh", "Miami", "Kirra", "Rainbow"]
+
+console.log(beaches.toString()) // Burleigh,Miami,Kirra,Rainbow
+
+```
+
 # Q11
 
 Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language

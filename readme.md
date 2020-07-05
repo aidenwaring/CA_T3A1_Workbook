@@ -28,20 +28,20 @@ _Provides an extensive overview and description of a standard source control pro
 **Answer:**
 _From Workbook 2_
 Source control workflow refers to the recommended steps and procedure adhered to in a source control environment. Developers utilising a source control system can contribute and work in different ways. The workflow concept is a design that defines the rules versioning, branching and the control of the master branch.
-[Reference](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 A popular standard workflow practiced by developers is the centralized workflow.
 In a centralized workflow, developers all contribute to a shared repository (as opposed to fork-pull workflow. This central repository is often created and hosted on source control hosting services such as Bitbucket or GitHub.
 
-Problems arise when publishing or "pushing" to the central repository without following a source control workflow. The centralized workflow, sometimes referred to as feature branch workflow, ensures that all code changes are made in new, feature-specific branches instead of master. These feature branches are created on the repository for code changes. Developers will make changes and edit files committing locally and synchronising upstream at a convenient time. Reviewed changes can then be "pulled" back into the shared repositories master branch by initiating a pull request. The request can then either be accepted or denied. Accepted pull requests then see new code "merged" into the master branch.
+With reference to my first group project as part of a hackathon with my fellow Coder Academy students, we utilised this strategy of source control. As we had to all work on the same code simultaneously, our team utilised a centralized workflow by having our source code available on GitHub, with each member being listed as a contributor and the chosen team leader owning the repository. This approach is often employed by organisations for in-house development, and was a perfect fit for our team's goals and remote-work environment.
 
-This segmentation of new code and it's staged change control methodology ensures that the master branch remains valid, stable and conflict-free. This approach is often employed by organisations for in-house development.
-[Reference](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
+We decided it be best to each utilise the 'feature-branch' design philosophy. This ensured that all code changes were made in new, feature-specific branches instead of master. Each member had a certain part of the application to work on. Each component was broken up into a different feature branch. These feature branches are created on the repository for code changes. Our tem made changes and edited files committing locally and synchronising upstream at a convenient time. Reviewed changes were then  "pulled" back into the shared repositories master branch by initiating a pull request once we had decided that there were no conflicts and that the branch contained working content relevant to the master branch and to the application's objectives.
 
-Notes:
+This segmentation of new code and it's staged change control methodology ensured that the master branch remained valid, stable and conflict-free. 
 
-Working on the Rails hackathon in a group. Used source control, collaboration tools such as liveshare, communication apps such as WhatsApp. Used Trello.
-Worked on different branches. Assigned someone as the master for managing pulls.
+In conjunction with using GitHub for source control, other processes we followed as part of our project was using a software development plan. Our team used Trello for planning the application's scope and user stories. Our developers were able to successfully communicate their plans via WhatsApp and Slack platforms and assist each other using Visual Studio Code's Live Share functionality.
+
+References Used:
+[1](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), [2](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 
 ## Q2
 
@@ -117,8 +117,6 @@ With reference to one of your own projects, discuss what knowledge or skills wer
 With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
 
 **Answer:**
-
-//Evaluates effectiveness of knowledge and skills accurately, providing examples, and providing an insightful improvement on each skill
 
 Reflecting upon my time completing my time completing my first Ruby assessment for Codey Academy, I can identify both my strenghts and weaknesses in my knowledge and skills.
 At that time, I was finishing up the remainder of my full-time work at my previous workplace and was only participating in 50% of the classes that was teaching the basics for programming within Ruby. At the time that the first assessment was provided to us, I had only just caught up with the learning content to produce the application. I knew going in to the 'sprints' and applying what I had just learned, I had to focus on completing an MVP - the most complete version of the project.

@@ -55,6 +55,23 @@ Outline a standard high level structure for a MERN stack application and explain
 
 **Answer:**
 
+A MERN stack application is a web development framework 'stack', which encompasses a combination of MongoDB, Express, React and Node.js. Each one is responsible for handling a component of the application. Examining the high level structure of a MERN Stack application can be done by examining each component individually and identifying how they connect to one another.
+
+**M** - MongoDB
+  - A NoSQL database program, MongoDB provides an application with a document-based database system. A document-based or oriented database system is disparent from a relational datbase system in it's data storage format due to it's lack of table rows and relations. MongoDB instead uses a document database, storing its data in "JSON-like documents". Search queries are structured to read through JSON formatted contents within documents. JavaScript can utilise this format efficiently due to the JSON format. MongoDB is used within this stack environment due to its speed, its aforementioned data model format and its use of JavaScript, which not onlyt makes development and data manipulation much more streamlined but also allows it to be integrated with the rest of the stack components nicely. 
+
+**E** - Express
+  - Express is a back-end Node.js framework. Express utilises its support for middleware components to make back-end Node content much easier to write. Express simplifies standard Node.js content such as defining request handlers for HTTP verb actions, routing and API calls. Express often accomplishes Node.js functionality in much fewer lines of code, keeping the program DRY. 
+
+**R** - React
+   - React is Facebook's JavaScript library used for front-end web development. React is built for designing user interfaces and is 'component based', with seperate files and sections of the code coming together to compose user interface. React uses Babel, a JavaScript compiler, to allow developers to write JSX code and have it transpiled into JavaScript. JSX is an XML/HTML-like extension of JavaScript which React uses to implement ES6 functionality and HTML-like tags. React renders compiled components to the DOM. React applies changes to a webpage's user interface without refreshing the page through the use of component states. 
+
+**N** - Node.js
+  - Node.JS is 
+
+References Used:
+[1](https://www.mongodb.com/), [2](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
+
 ## Q4
 
 A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?

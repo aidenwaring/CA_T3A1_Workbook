@@ -38,6 +38,7 @@ This segmentation of new code and it's staged change control methodology ensured
 In conjunction with using GitHub for source control, other processes we followed as part of our project was using a software development plan. Our team used Trello for planning the application's scope and user stories. Our developers were able to successfully communicate their plans via WhatsApp and Slack platforms and assist each other using Visual Studio Code's Live Share functionality.
 
 References Used:
+
 [1](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), [2](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 
 ## Q2
@@ -95,6 +96,7 @@ A MERN stack application is a web development framework 'stack', which encompass
 - Node.JS is a JavaScript runtime environment used to execute code outside of a web browser. Built on Chrome's V8 JavaScript engine, Node.js allows developers to take what used to be code exclusive to running in a web browser into a server environment. Node.js is open source and is used for developing server-side applications.
 
 References Used:
+
 [1](https://www.mongodb.com/), [2](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction), [3](https://nodejs.org/en/about/)
 
 ## Q4
@@ -382,6 +384,7 @@ In JavaScript (ECMAScript standards), nine data and structure types are defined:
     ```
 
 References Used:
+
 [1](https://developer.mozilla.org/en-US/docs/Glossary/Type), [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 ## Q10
@@ -565,6 +568,7 @@ console.log(myObject) //{ b: 2 }
 Other inbuild functions include .freeze(), which freezes a given object preventing code from changing or deleting it's paramaters, .keys() which returns an array of the keys in the object and much more. The full list of these functions can be found on on the [MDN web docs here.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 References Used:
+
 [1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in), [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects), [3](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 ## Q12
